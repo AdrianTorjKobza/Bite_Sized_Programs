@@ -28,8 +28,8 @@ sortList :: Ord a => [a] -> [a]
 sortList [] = [] -- Edge condition, when we reach the end of the list.
 sortList (x:xs) = less ++ [x] ++ greater
    where 
-      less = sortList [a | a <- xs, a <= x]
-      greater  = sortList [a | a <- xs, a > x]
+      less = sortList [a | a <- xs, a <= x] -- Take each element from the tail (xs) that is smaller or equal to the head (x) of the list. Recursively go through the list.
+      greater  = sortList [a | a <- xs, a > x] -- Take each element from the tail (xs) that is larger than the head (x) of the list. Recursively go through the list.
 
 
 -- The new list is sorted, containing unique items.
