@@ -4,12 +4,12 @@ from guizero import App, TextBox, PushButton, Box
 # Create the app for the program
 app = App(title="Text Editor")
 
-# Open the text file
+# Open the text file and upload the content into text editor
 def open_file():
     with open(file_name.value, "r") as f:
         editor.value = f.read()
 
-# Save the text file
+# Save the edited text into the text file
 def save_file():
     with open(file_name.value, "w") as f:
         f.write(editor.value)
