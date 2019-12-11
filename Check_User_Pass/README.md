@@ -1,5 +1,5 @@
-Pre-requisites: Download and install guizero: https://lawsie.github.io/guizero/
+Pre-requisites: download and install guizero: https://lawsie.github.io/guizero/
 
 The purpose of this simple program is to:
-ask user to enter a password twice
-check that the passwords are the same
+- ask user to enter a password twice
+- check that the passwords are the same
