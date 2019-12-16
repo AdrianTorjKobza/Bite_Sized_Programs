@@ -1,4 +1,4 @@
-The purpose of this simple program, is to print a shopping list, against which the following simple operations are performed:
+The purpose of this simple program is to manage a shopping list:
 - clean the shopping list of any duplicate items
 - sort the shopping list in alphabetical order
 - split the shopping list in items separated by comma
