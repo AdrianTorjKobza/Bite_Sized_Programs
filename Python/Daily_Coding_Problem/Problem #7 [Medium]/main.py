@@ -33,7 +33,6 @@ max = count_max_solutions(length+1)
 # If number is < 1, set the total number of solutions = 0.
 # If number is > 2 (e.g. resulting in 30, 42, 55, etc) or number is > 26, decrease the number of solutions by 1.
 def count_solutions(total, length):
-
     for m in message_coded:
         if m < 1:
             total = 0
