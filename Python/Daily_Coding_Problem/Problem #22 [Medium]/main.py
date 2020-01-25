@@ -1,8 +1,6 @@
 import itertools
 
 words = ["bed", "bath", "bedbath", "and", "beyond"]
-words.sort()
-
 string = "bedbathandbeyond"
 
 # Naive solution
@@ -22,7 +20,7 @@ print (output_list)
 all_words_combinations = []
 output_list = []
 
-for n in range(len(words)):
+for n in range(len(words) + 1):
     words_combination = itertools.permutations(words, n)
     all_words_combinations = all_words_combinations + list(words_combination)
 
