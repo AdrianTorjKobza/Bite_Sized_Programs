@@ -1,3 +1,6 @@
+# Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
+# For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
+
 time = [(30, 75), (0, 50), (60, 150), (90, 120), (10, 20), (0, 200)]
 time.sort()
 
@@ -36,6 +39,12 @@ def add_time_in_rooms (time):
 while len(time) > 0:
     add_time_in_rooms (time)
 
+count = 0
+
 # Display the time slots for each room.
 for i in range (0, len(rooms)):
-    print ("ROOM " + str(i) + ":" + str(rooms[i]))
+    if len(rooms[i]) > 0:
+        print ("ROOM " + str(i) + ":" + str(rooms[i]))
+        count = count + 1
+
+print ("Number of booked rooms: " + str(count))
