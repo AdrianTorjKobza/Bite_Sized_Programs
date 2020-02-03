@@ -55,6 +55,6 @@ def get_total_water (subwall):
 # Sum the total amount of water for each sublist. 
 total_water = 0
 for i in lists_of_lists:
-    total_water = total_water + get_total_water (i)
+    total_water = total_water + get_total_water(i)
 
 print (total_water)
